@@ -51,8 +51,8 @@ void testSolverQuadraticEquation() {
     double x1 = 0, x2 = 0;
     RootsNumber rootsNumber = ZERO;
     
-    const int n = 6;
-    double a[n][3] = {
+    double a[][3] = {
+        {1, 0, 0},
         {0, 0, 0},
         {1, 2, 1},
         {1, -2, 1},
@@ -60,7 +60,8 @@ void testSolverQuadraticEquation() {
         {1, -5, 6},
         {1, -5, 6},
     };
-    double x[n][2] = {
+    double x[][2] = {
+        {0, 0},
         {0, 0},
         {-1, -1},
         {1, 1},
@@ -68,7 +69,15 @@ void testSolverQuadraticEquation() {
         {2, 3},
         {3, 2}
     };
-    RootsNumber rootsNumbers[n] = {INF, ONE, ONE, ZERO, TWO, TWO};
+    RootsNumber rootsNumbers[] = {ONE, INF, ONE, ONE, ZERO, TWO, TWO};
+    
+    const int n = sizeof(a) / (sizeof(double) * 3);
+    {
+        const int xLength = sizeof(x) / (sizeof(double) * 2);
+        const int rootsNumbersLength = sizeof(rootsNumbers) / sizeof(RootsNumber);
+        assert(n == xLength);
+        assert(n == rootsNumbersLength);
+    }
     
     for (int i = 0; i < n; i++) {
         x1 = 0;
