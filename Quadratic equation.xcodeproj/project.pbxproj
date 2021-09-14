@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C8687C5B26ED002E00C68DAE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C8687C5A26ED002E00C68DAE /* main.c */; };
+		C8D3B3A326EFF8AB00642A81 /* solveQuadraticEquation.c in Sources */ = {isa = PBXBuildFile; fileRef = C8D3B3A226EFF8AB00642A81 /* solveQuadraticEquation.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		C8687C5726ED002E00C68DAE /* Quadratic equation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Quadratic equation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8687C5A26ED002E00C68DAE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C8D3B3A126EFF8AB00642A81 /* solveQuadraticEquation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = solveQuadraticEquation.h; sourceTree = "<group>"; };
+		C8D3B3A226EFF8AB00642A81 /* solveQuadraticEquation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = solveQuadraticEquation.c; sourceTree = "<group>"; };
+		C8D3B3A426EFF8D600642A81 /* RootsNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootsNumber.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				C8687C5A26ED002E00C68DAE /* main.c */,
+				C8D3B3A126EFF8AB00642A81 /* solveQuadraticEquation.h */,
+				C8D3B3A226EFF8AB00642A81 /* solveQuadraticEquation.c */,
+				C8D3B3A426EFF8D600642A81 /* RootsNumber.h */,
 			);
 			path = "Quadratic equation";
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D3B3A326EFF8AB00642A81 /* solveQuadraticEquation.c in Sources */,
 				C8687C5B26ED002E00C68DAE /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
